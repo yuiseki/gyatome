@@ -9,9 +9,7 @@ const container = css`
 export const Home = (): JSX.Element => (
   <div css={container}>
     <main>
-      <h1 tw='text-5xl font-bold'>
-        Nextjs App with TypeScript, ESlint, Jest, Emotion, Tailwind and Twin
-      </h1>
+      <h1 tw='text-5xl font-bold'>Gyatome: Create matome by Gyazo</h1>
       <Button />
     </main>
   </div>

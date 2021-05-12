@@ -20,9 +20,7 @@ const globalStyles = css`
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <title>
-        Nextjs App with TypeScript, ESlint, Jest, Emotion, Tailwind and Twin
-      </title>
+      <title>Gyatome: Create matome by Gyazo</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <GlobalStyles />
