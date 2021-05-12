@@ -33,7 +33,7 @@ export const Matome = () => {
       </Head>
       <div css={container}>
         <main>
-          <h1 tw='text-5xl font-bold'>gyatome</h1>
+          <h1 tw='m-3 text-5xl font-bold'>gyatome</h1>
           <div tw='grid grid-cols-3'>
             {sortedData &&
               sortedData.map((image) => {
