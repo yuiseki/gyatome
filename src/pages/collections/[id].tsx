@@ -18,6 +18,7 @@ export const Matome = () => {
     }
   }, [router]);
 
+  const source = `https://gyazo.com/collections/${id}`;
   const { data } = useSWR(`https://api.gyazo.com/api/collections/${id}/images`);
   const sortedData = data
     ?.sort((a, b) => {
@@ -29,11 +30,17 @@ export const Matome = () => {
   return (
     <>
       <Head>
-        <title>gyatome</title>
+        <title>Gyatome</title>
       </Head>
       <div css={container}>
         <main>
-          <h1 tw='m-3 text-5xl font-bold'>gyatome</h1>
+          <h1 tw='m-3 text-5xl font-bold'>
+            <a href='/'>Gyatome</a>
+          </h1>
+          <h1 tw='m-3 text-3xl font-bold'>
+            <span>source: </span>
+            <a href={source}>{source}</a>
+          </h1>
           <div tw='grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3'>
             {sortedData &&
               sortedData.map((image) => {
