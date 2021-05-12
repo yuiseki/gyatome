@@ -37,10 +37,10 @@ export const Matome = () => {
           <h1 tw='m-3 text-5xl font-bold'>
             <a href='/'>Gyatome</a>
           </h1>
-          <h1 tw='m-3 text-3xl font-bold'>
+          <h3 tw='m-3 text-3xl font-bold break-all'>
             <span>source: </span>
             <a href={source}>{source}</a>
-          </h1>
+          </h3>
           <div tw='grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3'>
             {sortedData &&
               sortedData.map((image) => {
