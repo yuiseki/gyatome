@@ -34,7 +34,7 @@ export const Matome = () => {
       <div css={container}>
         <main>
           <h1 tw='m-3 text-5xl font-bold'>gyatome</h1>
-          <div tw='grid grid-cols-3'>
+          <div tw='grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3'>
             {sortedData &&
               sortedData.map((image) => {
                 return (
