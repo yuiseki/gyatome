@@ -19,7 +19,9 @@ export const Matome = () => {
   }, [router]);
 
   const source = `https://gyazo.com/collections/${id}`;
-  const { data } = useSWR(`https://api.gyazo.com/api/collections/${id}/images`);
+  const { data } = useSWR(
+    `https://api.gyazo.com/api/collections/${id}/images?per=100`
+  );
   const sortedData = data
     ?.sort((a, b) => {
       return (
